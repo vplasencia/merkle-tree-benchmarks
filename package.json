@@ -1,0 +1,8 @@
+{
+  "name": "merkle-tree-benchmarks",
+  "packageManager": "yarn@4.9.3",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "tinybench": "^5.0.1"
+  }
+}
