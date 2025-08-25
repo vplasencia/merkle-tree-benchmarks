@@ -1,8 +1,23 @@
 {
-  "name": "merkle-tree-benchmarks",
-  "packageManager": "yarn@4.9.3",
-  "devDependencies": {
-    "prettier": "^3.6.2",
-    "tinybench": "^5.0.1"
-  }
+    "name": "merkle-tree-benchmarks",
+    "packageManager": "yarn@4.9.3",
+    "scripts": {
+        "server": "tsx src/index.ts",
+        "lint": "eslint . --ext .js,.ts",
+        "prettier": "prettier -c .",
+        "prettier:write": "prettier -w ."
+    },
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "prettier": "^3.6.2",
+        "tinybench": "^5.0.1",
+        "tsx": "^4.20.5",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "@maci-protocol/crypto": "0.0.0-ci.5e114d776",
+        "@zk-kit/lean-imt": "^2.2.4",
+        "@zk-kit/smt": "^1.0.2",
+        "poseidon-lite": "^0.3.0"
+    }
 }
