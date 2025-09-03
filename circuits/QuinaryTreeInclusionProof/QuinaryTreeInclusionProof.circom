@@ -54,6 +54,5 @@ template QuinaryTreeInclusionProof(levels) {
     root <== currentLeaf;
 }
 
-// unsolved is a public input signal. It is the unsolved sudoku
 component main = QuinaryTreeInclusionProof(6);
 
