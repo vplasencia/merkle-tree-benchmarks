@@ -3,6 +3,9 @@
     "packageManager": "yarn@4.9.3",
     "scripts": {
         "server": "tsx src/index.ts",
+        "compile": "chmod u+x ./scripts/compile.sh && ./scripts/compile.sh",
+        "compile:leanimt": "chmod u+x ./scripts/compile.sh && ./scripts/compile.sh binary-merkle-root",
+        "compile:quinarymt": "chmod u+x ./scripts/compile.sh && ./scripts/compile.sh QuinaryTreeInclusionProof",
         "lint": "eslint . --ext .js,.ts",
         "prettier": "prettier -c .",
         "prettier:write": "prettier -w ."
@@ -17,7 +20,10 @@
     "dependencies": {
         "@maci-protocol/crypto": "0.0.0-ci.5e114d776",
         "@zk-kit/lean-imt": "^2.2.4",
+        "@zk-kit/poseidon-cipher.circom": "^1.0.0-beta.2",
         "@zk-kit/smt": "^1.0.2",
+        "@zk-kit/utils.circom": "^1.0.0-beta.2",
+        "circomlib": "^2.0.5",
         "poseidon-lite": "^0.3.0"
     }
 }

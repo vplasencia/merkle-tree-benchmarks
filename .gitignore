@@ -13,3 +13,6 @@ data
 
 # Python
 __pycache__
+
+# Folder that has all the zk artifacts
+build
